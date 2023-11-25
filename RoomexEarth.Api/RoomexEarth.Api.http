@@ -1,0 +1,17 @@
+@HostAddress = http://localhost:48080
+
+### Challenge
+### 5536.338682266685 Km
+GET {{HostAddress}}/distance/from/53.297975/-6.372663/to/41.385101/-81.440440
+Accept: application/json
+
+### https://www.themathdoctors.org/distances-on-earth-1-the-cosine-formula/
+### (-1.680433715 * 6371) = 10706.043195318347 Km
+GET {{HostAddress}}/distance/from/-33/-56/to/40/12
+Accept: application/json
+
+### Validation check
+GET {{HostAddress}}/distance/from/1000/2000/to/3000/4000
+Accept: application/json
+
+###
